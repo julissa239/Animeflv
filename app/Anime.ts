@@ -12,7 +12,7 @@ interface Anime extends mongoose.Document {
 const AnimeSchema = new mongoose.Schema({
     name: { type: String, required: true},
     episode_Number: { type: mongoose.Schema.Types.ObjectId, ref: "Episodio" },
-    genero: {type: Number, required: true},
+    genero: {type: String, required: true},
     descripcion: {type: String, required: true}
 });
 
